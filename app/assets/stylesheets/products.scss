@@ -209,16 +209,14 @@ style-null {
 
 /*--New Product Form--*/
 #product_new{
-  width: 80%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 1320px;
-  top: 80px;
   padding-bottom: 70px;
 }
-#product_create{
+#product_create, #edit_product{
   margin-top: 1em;
   padding-top: 1em;
 }
@@ -228,3 +226,11 @@ style-null {
 #product_new p{
   margin-bottom: 0;
 }
+/*--to fix width--*/
+#product_new .field .form-control{
+  width: 100%;
+}
+textarea#product_description.form-control{
+  height: 9em;
+}
+

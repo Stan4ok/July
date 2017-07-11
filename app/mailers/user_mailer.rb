@@ -2,8 +2,8 @@ class UserMailer < ApplicationMailer
   default from: "stepandubovoy@gmail.com"
 
   def contact_form(email, name, message, phone)
-  @message = message
-  @phone = phone
+    @message = message
+    @phone = phone
     mail(from: email,
           to: 'stepandubovoy@gmail.com',
           subject: "A new contact form message from #{name}"
@@ -12,10 +12,19 @@ class UserMailer < ApplicationMailer
  #         body: "Contact Telephone: #{phone}"
     )
   end
+<<<<<<< HEAD
     def signup_email(user)
   @user = user
     mail(to: user.email,
           subject: "Welcome to Bike Berlin!"
     )
   end
+=======
+
+  def signup_email(user)
+    @user = user
+    mail(to: user.email, 
+          subject: "Welcome to Berlin Bike")
+  end    
+>>>>>>> testing
 end
